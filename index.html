@@ -9,7 +9,7 @@
     .flexbox-container {
      display: flex; /* flex gives all the items equal height and layout on the main axis (horizontal) */
      background-color: green;
-
+     height: 95vh;
 
     }
     .flexbox-item {
@@ -25,14 +25,17 @@
     .item-1 {
       min-height: 50px;
       flex: 1 1 15%; /* flex-grow 1, flex-shriek 1 flex-basis 15% */
+      align-self:center; /* the defult is stretch */
     }
     .item-2 {
       min-height: 150px;
       flex: 1 1 25%;
+      align-self: flex-start;
     }
     .item-3 {
       min-height: 250px;
       flex: 5 5 25%;
+      align-self:flex-end;
   </style>
 </head>
 <body>
