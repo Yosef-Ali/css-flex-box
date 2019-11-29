@@ -9,12 +9,10 @@
     .flexbox-container {
      display: flex; /* flex gives all the items equal height and layout on the main axis (horizontal) */
      background-color: green;
-     flex-wrap: wrap;
-     justify-content:center; /* align the items horizontaly */
-     align-items: center; /* flex-start gives the given height by default it is stretch and align the item vertical each other*/
+     flex-direction: column;
+     justify-content: center; /* it align the items verticaly */
+     align-items: center; /*it align column items to the center (not align-content) */
 
-     align-content: center; /* align-content align the items with in the container verticaly */
-     height: 95vh;
     }
     .flexbox-item {
       width: 25%;
