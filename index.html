@@ -19,24 +19,20 @@
       font-size: 2em;
       padding: 20px;
       margin: 10px;
-      flex-basis: 15%; /* it is the starting point of the items width */
+
     }
 
     .item-1 {
       min-height: 50px;
-      flex-grow: 1;
-      flex-shrink: 1;
+      flex: 1 1 15%; /* flex-grow 1, flex-shriek 1 flex-basis 15% */
     }
     .item-2 {
       min-height: 150px;
-      flex-grow: 2; /* item grow 2 times larger than the others */
-      flex-shrink: 2; /* item shrinks 2 times smaller than the others */
+
     }
     .item-3 {
       min-height: 250px;
-      flex-grow: 1;
-      flex-shrink: 1;
-    }
+
   </style>
 </head>
 <body>
